@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Timer</title>
+
+
+  </head>
+  <body>
+    <div class="window">
+        <div class="timer">
+          <p id="timerText">00:00</p>
+
+        </div>
+        <div class="buttonRow">
+          <button id="playButton">Play</button>
+          <button id="addMinutesButton"> Add 1</button>
+          <button id="add10MinutesButton"> Add 10</button>
+
+        </div>
+    </div>
+  </body>
+  <script src="./src/models/timer.js"></script>
+  <script src="./renderer.js"></script>
+
+</html>
+
+
+
+
